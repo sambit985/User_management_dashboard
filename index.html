@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <title>Management Dashboard</title>
+
+
+
+
+
+
+</head>
+<body>
+<div class="container">
+  
+  <div class="container">
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-pattern">
+                <div class="card-body">
+                    <div class="float-right">
+                        <i class="fa fa-archive text-primary h4 ml-3"></i>
+                    </div>
+                    <h5 class="font-size-20 mt-0 pt-1">24</h5>
+                    <p class="total-project">Total Projects</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-pattern">
+                <div class="card-body">
+                    <div class="float-right">
+                        <i class="fa fa-th text-primary h4 ml-3"></i>
+                    </div>
+                    <h5 class="font-size-20 mt-0 pt-1">18</h5>
+                    <p class="text-muted mb-0">Completed Projects</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-pattern">
+                <div class="card-body">
+                    <div class="float-right">
+                        <i class="fa fa-file text-primary h4 ml-3"></i>
+                    </div>
+                    <h5 class="font-size-20 mt-0 pt-1">06</h5>
+                    <p class="text-muted mb-0">Pending Projects</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group mb-0">
+                            <label>Search</label>
+                            <div class="input-group mb-0">
+                                <input type="text" class="form-control" placeholder="Search..." aria-describedby="project-search-addon" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-danger" type="button" id="project-search-addon"><i class="fa fa-search search-icon font-12"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end row -->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive project-list">
+                        <table class="table project-table table-centered table-nowrap">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Projects</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Team</th>
+                                    <th scope="col">Progress</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>New admin Design</td>
+                                    <td>02/5/2019</td>
+                                    <td>
+                                        <span class="text-success font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Completed</span>
+                                    </td>
+                                    <td>
+                                        <div class="team">
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Roger Drake">
+                                                <img src="  https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=pexels-simon-robben-614810.jpg&fm=jpg  " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reggie James">
+  <img src=" https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?cs=srgb&dl=pexels-justin-shaifer-1222271.jpg&fm=jpg  " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Gerald Mayberry">
+                                                <img src="https://therichpost.com/wp-content/uploads/2021/03/avatar8.png" class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Progress<span class="float-right">100%</span></p>
+
+                                        <div class="progress mt-2" style="height: 5px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="action">
+                                            <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                            <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa-remove h5 m-0"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Landing page Design</td>
+                                    <td>04/6/2019</td>
+                                    <td>
+                                        <span class="text-primary font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Pending</span>
+                                    </td>
+                                    <td>
+                                        <div class="team">
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Deborah Mixon">
+    <img src="  https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?cs=srgb&dl=pexels-nitin-khajotia-1516680.jpg&fm=jpg " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Scott Jessie">
+                                                <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?cs=srgb&dl=pexels-nitin-khajotia-1516680.jpg&fm=jpg " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Progress<span class="float-right">78%</span></p>
+
+                                        <div class="progress mt-2" style="height: 5px;">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="action">
+                                            <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                            <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa fa-remove h5 m-0"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Multipurpose Landing Template</td>
+                                    <td>06/6/2019</td>
+                                    <td>
+                                        <span class="text-success font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Completed</span>
+                                    </td>
+                                    <td>
+                                        <div class="team">
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Neil Wing">
+  <img src="  https://images.pexels.com/photos/3453083/pexels-photo-3453083.jpeg?cs=srgb&dl=pexels-denniz-futalan-3453083.jpg&fm=jpg " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stanley Barber">
+                                                <img src="https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-874158.jpg&fm=jpg " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Roger Drake">
+                                                <img src=" https://images.pexels.com/photos/906020/pexels-photo-906020.jpeg?cs=srgb&dl=pexels-noelle-otto-906020.jpg&fm=jp  " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Jack Krier">
+ <img src=" https://images.pexels.com/photos/3812011/pexels-photo-3812011.jpeg?cs=srgb&dl=pexels-km-l-3812011.jpg&fm=jpg    " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Progress<span class="float-right">100%</span></p>
+
+                                        <div class="progress mt-2" style="height: 5px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="action">
+                                            <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                            <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa fa-remove h5 m-0"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Blog Template Design</td>
+                                    <td>07/5/2019</td>
+                                    <td>
+                                        <span class="text-success font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Completed</span>
+                                    </td>
+                                    <td>
+                                        <div class="team">
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Roger Drake">
+                                                <img src="https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-874158.jpg&fm=jpg " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reggie James">
+                                              
+ <img src="https://images.pexels.com/photos/2112728/pexels-photo-2112728.jpeg?cs=srgb&dl=pexels-lucas-pezeta-2112728.jpg&fm=jpg       " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Gerald Mayberry">
+                                                <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=pexels-simon-robben-614810.jpg&fm=jpg  " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Progress<span class="float-right">100%</span></p>
+
+                                        <div class="progress mt-2" style="height: 5px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="action">
+                                            <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                            <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa fa-remove h5 m-0"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Brand logo design</td>
+                                    <td>08/6/2019</td>
+                                    <td>
+                                        <span class="text-primary font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Pending</span>
+                                    </td>
+                                    <td>
+                                        <div class="team">
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Deborah Mixon">
+                                              
+ <img src="https://images.pexels.com/photos/997472/pexels-photo-997472.jpeg?cs=srgb&dl=pexels-ali-madad-sakhirani-997472.jpg&fm=jpg" class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Scott Jessie">
+                                                <img src="https://images.pexels.com/photos/906020/pexels-photo-906020.jpeg?cs=srgb&dl=pexels-noelle-otto-906020.jpg&fm=jpg  " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Progress<span class="float-right">54%</span></p>
+
+                                        <div class="progress mt-2" style="height: 5px;">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 54%;" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="action">
+                                            <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                            <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa fa-remove h5 m-0"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Redesign - Landing page</td>
+                                    <td>10/6/2019</td>
+                                    <td>
+                                        <span class="text-primary font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Pending</span>
+                                    </td>
+                                    <td>
+                                        <div class="team">
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Neil Wing">
+                                            
+  <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?cs=srgb&dl=pexels-italo-melo-2379005.jpg&fm=jpg " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stanley Barber">
+ <img src=" https://images.pexels.com/photos/7893740/pexels-photo-7893740.jpeg?cs=srgb&dl=pexels-kampus-production-7893740.jpg&fm=jpg" class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Roger Drake">
+                                                
+ <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg    " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Jack Krier">
+                                              
+ <img src=" https://images.pexels.com/photos/8386820/pexels-photo-8386820.jpeg?cs=srgb&dl=pexels-darina-belonogova-8386820.jpg&fm=jpg " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Progress<span class="float-right">41%</span></p>
+
+                                        <div class="progress mt-2" style="height: 5px;">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 41%;" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="action">
+                                            <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                            <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa fa-remove h5 m-0"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>Redesign - Dashboard</td>
+                                    <td>12/5/2019</td>
+                                    <td>
+                                        <span class="text-success font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Completed</span>
+                                    </td>
+                                    <td>
+                                        <div class="team">
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Roger Drake">
+                                                <img src="https://images.pexels.com/photos/9924646/pexels-photo-9924646.jpeg?cs=srgb&dl=pexels-alexey-demidov-9924646.jpg&fm=jpg " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reggie James">
+                                                <img src=" https://images.pexels.com/photos/9947780/pexels-photo-9947780.jpeg?cs=srgb&dl=pexels-ilya-komov-9947780.jpg&fm=jpg  " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Progress<span class="float-right">100%</span></p>
+                                        <div class="progress mt-2" style="height: 5px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="action">
+                                            <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                            <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa fa-remove h5 m-0"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>Landing page Design</td>
+                                    <td>13/6/2019</td>
+                                    <td>
+                                        <span class="text-primary font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Pending</span>
+                                    </td>
+                                    <td>
+                                        <div class="team">
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Deborah Mixon">
+                                                <img src="https://images.pexels.com/photos/3586798/pexels-photo-3586798.jpeg?cs=srgb&dl=pexels-mateus-souza-3586798.jpg&fm=jpg " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Scott Jessie">
+                                                <img src="https://images.pexels.com/photos/3981337/pexels-photo-3981337.jpeg?cs=srgb&dl=pexels-grisha-chernigowsky-3981337.jpg&fm=jpg   " class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Progress<span class="float-right">84%</span></p>
+
+                                        <div class="progress mt-2" style="height: 5px;">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 84%;" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="action">
+                                            <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                            <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa fa-remove h5 m-0"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>Multipurpose Landing Template</td>
+                                    <td>15/6/2019</td>
+                                    <td>
+                                        <span class="text-success font-12"><i class="mdi mdi-checkbox-blank-circle mr-1"></i> Completed</span>
+                                    </td>
+                                    <td>
+                                        <div class="team">
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Neil Wing">
+                                                <img src="https://images.pexels.com/photos/9794899/pexels-photo-9794899.jpeg?cs=srgb&dl=pexels-valera-evane-9794899.jpg&fm=jpg" class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stanley Barber">
+                                                <img src=" https://images.pexels.com/photos/5704720/pexels-photo-5704720.jpeg?cs=srgb&dl=pexels-anastasia-shuraeva-5704720.jpg&fm=jpg" class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+                                            <a href="javascript: void(0);" class="team-member" data-toggle="tooltip" data-placement="top" title="" data-original-title="Roger Drake">
+                                                <img src="https://images.pexels.com/photos/2232981/pexels-photo-2232981.jpeg?cs=srgb&dl=pexels-bm-capture-2232981.jpg&fm=jpg" class="rounded-circle avatar-xs" alt="" />
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Progress<span class="float-right">100%</span></p>
+
+                                        <div class="progress mt-2" style="height: 5px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="action">
+                                            <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"> <i class="fa fa-pencil h5 m-0"></i></a>
+                                            <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"> <i class="fa fa fa-remove h5 m-0"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- end project-list -->
+
+                    <div class="pt-3">
+                        <ul class="pagination justify-content-end mb-0">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end row -->
+</div>
+        
+    </body>
+</html>
